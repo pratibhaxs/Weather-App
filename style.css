@@ -1,0 +1,110 @@
+body {
+    background: #181a1b;
+    color: #f1f1f1;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: #23272a;
+    padding: 2.5rem 2rem 2rem 2rem;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.5);
+    width: 350px;
+    max-width: 90vw;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #ff8800;
+    letter-spacing: 1px;
+}
+
+.input-container {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#city-input {
+    flex: 1;
+    padding: 0.7rem 1rem;
+    border: none;
+    border-radius: 8px;
+    background: #2c2f33;
+    color: #f1f1f1;
+    font-size: 1rem;
+    outline: none;
+    transition: background 0.2s;
+}
+
+#city-input:focus {
+    background: #23272a;
+}
+
+#get-weather-btn {
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background: #ff8800;
+    color: #23272a;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+    box-shadow: 0 2px 8px rgba(255,136,0,0.10);
+}
+
+#get-weather-btn:hover {
+    background: #ff6600;
+    color: #fff;
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 4px 16px rgba(255,102,0,0.18);
+}
+
+#weather-info {
+    margin-top: 1.5rem;
+    background: #202225;
+    border-radius: 10px;
+    padding: 1.2rem 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: opacity 0.3s;
+}
+
+#city-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #ff8800;
+}
+
+#temperature {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+#description {
+    font-size: 1.1rem;
+    color: #bdbdbd;
+}
+
+#error-message {
+    color: #ff6b6b;
+    margin-top: 1.2rem;
+    background: #2c2f33;
+    border-radius: 8px;
+    padding: 0.7rem 1rem;
+    font-weight: 500;
+    display: none;
+}
+
+.hidden {
+    display: none !important;
+}
